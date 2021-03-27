@@ -32,7 +32,7 @@ model.make_predict_function()          # Necessary
 #from keras.applications.resnet50 import ResNet50
 #model = ResNet50(weights='imagenet')
 #model.save('')
-print('Model loaded. Check http://127.0.0.1:5000/')
+#print('Model loaded. Check http://127.0.0.1:5000/')
 
 
 def model_predict(img_path, model):
