@@ -1,6 +1,7 @@
 # Specify your base image
 FROM python:3.8.8
 # create a work directory
+EXPOSE 5000
 RUN mkdir /app
 # navigate to this work directory
 WORKDIR /app
