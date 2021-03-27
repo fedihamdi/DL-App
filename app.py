@@ -1,9 +1,9 @@
 from __future__ import division, print_function
 # coding=utf-8
-import sys
+
 import os
-import glob
-import re
+
+
 import numpy as np
 
 # Keras
@@ -12,9 +12,9 @@ from tensorflow.keras.models import load_model
 from keras.preprocessing import image
 
 # Flask utils
-from flask import Flask, redirect, url_for, request, render_template
+from flask import Flask, request, render_template
 from werkzeug.utils import secure_filename
-from gevent.pywsgi import WSGIServer
+
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 # Define a flask app
 app = Flask(__name__)
