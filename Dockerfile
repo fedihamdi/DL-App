@@ -1,5 +1,5 @@
 # Specify your base image
-FROM python:3.8.8-stretch
+FROM python:3.8.8
 # create a work directory
 RUN mkdir /app
 # navigate to this work directory
@@ -10,4 +10,4 @@ COPY . .
 RUN python -m pip install --upgrade pip
 RUN pip install -r requirements.txt
 # Run
-CMD ["python","upload.py"]
+CMD ["python","app.py"]
