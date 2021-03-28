@@ -23,7 +23,7 @@ app = Flask(__name__)
 MODEL_PATH = 'models/model_resnet.h5'
 
 # Load your trained model
-model = load_model(MODEL_PATH, compile=False)
+model = load_model(MODEL_PATH, compile=True)
 model.make_predict_function()          # Necessary
 # print('Model loaded. Start serving...')
 
